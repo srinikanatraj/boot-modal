@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Modal Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-4 text-center">
+
+  <h2 class="mb-4">🪟 Bootstrap Modal Project</h2>
+
+  <!-- Button Trigger -->
+  <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open Modal
+  </button>
+
+  <!-- Link Trigger -->
+  <br><br>
+  <a href="#myModal" data-toggle="modal" class="btn btn-success">
+    Open via Link
+  </a>
+
+</div>
+
+<!-- 1. Basic Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Basic Modal</h5>
+        <button class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        This is a basic modal example.
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 2. Centered Modal -->
+<div class="modal fade" id="centerModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Centered Modal</h5>
+        <button class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        This modal is vertically centered.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 3. Scrollable Modal -->
+<div class="modal fade" id="scrollModal">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Scrollable Modal</h5>
+        <button class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p>Lots of content...</p>
+        <p>Scroll inside modal...</p>
+        <p>More text...</p>
+        <p>More text...</p>
+        <p>More text...</p>
+        <p>More text...</p>
+        <p>More text...</p>
+        <p>More text...</p>
+        <p>More text...</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 4. Small Modal -->
+<div class="modal fade" id="smallModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        Small Modal
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Large Modal -->
+<div class="modal fade" id="largeModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        Large Modal
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Extra Buttons -->
+<div class="container text-center mt-4">
+  <button class="btn btn-info" data-toggle="modal" data-target="#centerModal">Centered</button>
+  <button class="btn btn-warning" data-toggle="modal" data-target="#scrollModal">Scrollable</button>
+  <button class="btn btn-secondary" data-toggle="modal" data-target="#smallModal">Small</button>
+  <button class="btn btn-dark" data-toggle="modal" data-target="#largeModal">Large</button>
+</div>
+
+</body>
+</html>
